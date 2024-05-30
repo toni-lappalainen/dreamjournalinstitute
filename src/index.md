@@ -6,7 +6,11 @@ templateEngineOverride: md, njk
 
 
 <div class="construction">
-  <img src="http://textfiles.com/underconstruction/HeHeartlandEstates4894iconsconstruction.gif">
+  <img src="image.png">
 </div>
+
+<webring-banner
+  host-name="dji" open-new banner="nick">
+</webring-banner>
 
 <script type="module" src="https://myrrys.net/webring/static/webring-banner.js"></script>
