@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.gif" alt="Logo">
+        <h1><u>{{ title }}</u></h1>
+    </header>
+    <div class="container">
+
+        {% include "components/nav.njk" %}
+        
+        <main>
+        {% for post in collections.blogposts %}
+            <div class="post">
+               <h2><a href="{{post.url}}">{{post.data.title}}  </a> </h2>
+                {{post.content | safe}}
+            </div>
+        {% endfor %}
+
+        </main>
+    </div>
+
+    {% include "components/footer.njk" %}
+</body>
+</html>
