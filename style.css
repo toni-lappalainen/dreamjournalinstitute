@@ -1,0 +1,114 @@
+html {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: black;
+}
+
+body {
+  background-color: #8ca7b6;
+  color: #0e0e0e;
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 800px;
+}
+
+/* let's use more readable font for the actual texts */
+p {
+  font-family: "Cutive Mono", monospace;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  border-bottom: 4px solid black;
+}
+header img {
+  height: 120px; /* Adjust as needed */
+  object-fit: cover;
+  margin-right: 2em;
+}
+header h1 {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 480px) { /* Target screens less than 768px wide */
+  header {
+    justify-content: space-between;
+    padding: 0.1em;
+  }
+  header img {
+    height: 80px; /* Adjust as needed */
+    object-fit: cover;
+    margin-right: 1em;
+  }
+  header h1 {
+    font-size: 1.5em;
+  margin-top: 5px;
+  }
+}
+
+.container {
+  display: flex;
+}
+
+nav {
+  padding: 1em;
+  padding-top: 2em;
+  border-right: 6px solid black;
+  max-width: 15%;
+}
+
+@media only screen and (max-width: 480px) {
+  nav {
+    display: none; /* Hide navigation on mobile */
+    border: none; /* Remove border on mobile */
+  }
+}
+
+main {
+  flex: 1;
+  padding: 1em;
+}
+
+.post {
+  margin-bottom: 4em;
+}
+
+.post img {
+  max-width:600px;
+}
+@media only screen and (max-width: 480px) { /* Target screens less than 768px wide */
+  main {
+    padding: 1em;
+  }
+  .post img {
+    max-width: 100%;
+  }
+}
+
+
+a { /* Style the navigation links */
+  color: black;
+  display: block; /* Display each link on a new line */
+  margin-bottom: 10px;
+}
+
+a:hover { /* Optional hover effect */
+  color: #333;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  border-top: 4px solid black;
+}
+@media only screen and (max-width: 480px) { /* Target screens less than 768px wide */
+  .footer {
+  }
+}
