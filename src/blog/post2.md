@@ -1,7 +1,6 @@
 ---
 title: SECTION 5.5.2
 description: "example of a blog post2"
-image: "/assets/quotes-banner.jpeg"
 templateEngineOverride: md, njk
 ---
 

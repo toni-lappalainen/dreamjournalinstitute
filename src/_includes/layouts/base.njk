@@ -16,7 +16,7 @@
 </head>
 <body>
     <header>
-        <img src="logo.gif" alt="Logo">
+        <img src="./assets/logo.gif" alt="Logo">
         <h1><u>{{ title }}</u></h1>
     </header>
     <div class="container">
@@ -26,7 +26,8 @@
         <main>
         {% for post in collections.blogposts %}
             <div class="post">
-               <h2><a href="{{post.url}}">{{post.data.title}}  </a> </h2>
+               <!--<h2><a href="{{post.url}}">{{post.data.title}}  </a> </h2>-->
+               <h2>{{post.data.title}}</h2>
                 {{post.content | safe}}
             </div>
         {% endfor %}
